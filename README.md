@@ -32,6 +32,7 @@ Endpoint for registering a user
  
 
 # DATABASE after registering admin    
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/688db436-db2b-4964-929a-67cd1eec3393)
 ![image](https://github.com/smritizz/cricbuzz/assets/93935378/7e423156-8b5a-4874-b6a2-715900e89699)
 
  
@@ -40,7 +41,7 @@ Endpoint for registering a user
 Endpoint for logging in a user
 [POST] /api/admin/login.
 # Login Failed (enetered wrong password)   RESPONSE TIME: 612ms
-![image](https://github.com/smritizz/cricbuzz/assets/93935378/688db436-db2b-4964-929a-67cd1eec3393)
+
 
  
 # Login Successful (with correct password and username) RESPONSE TIME: 940ms
