@@ -41,10 +41,14 @@ Endpoint for registering a user
 Endpoint for logging in a user
 [POST] /api/admin/login.
 # Login Failed (enetered wrong password)   RESPONSE TIME: 612ms
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/b4d2707a-be5d-4234-9f9d-8b918f9d0a65)
+
 
 
  
 # Login Successful (with correct password and username) RESPONSE TIME: 940ms
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/a8cc6d92-063f-4324-8295-b8d68f581976)
+
 
     
 
@@ -54,10 +58,15 @@ Endpoint for admins to create match
 Works only when authorization token is added to headers
 # Unauthorized (when authorization token is not added in headers along with the req.body)
 RESPONSE TIME: 9ms
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/bc74fa14-e28d-4a5c-8abc-7bf271d897a8)
+
 
  
 
 # Authorized and match is created (when authorization token is added in headers along with the req.body)  RESPONSE TIME: 45ms
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/c7a72169-2969-4bce-973d-85b7a081e308)
+
+
 
   
 
@@ -65,12 +74,16 @@ RESPONSE TIME: 9ms
 Guest users can also fetch match details, so no authorization needed
 [GET] /api/matches
 # Match details fetched successfully by Get request  RESPONSE TIME: 7ms
-
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/b11cd676-edef-4a96-b936-ecb34bb4f99d)
 
  
 5. Get match Details by match_id
 Guest users can also fetch match details of a particular match by match_id (No authorization token needed)      [GET] /api/matches/{match_id}
 # Match details of a particular match by passing matchId in params fetched successfully by Get request       RESPONSE TIME: 97ms
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/247bf474-65a1-4967-98ef-f0a15b9b9ed7)
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/062f3b4d-478f-42d8-99c2-b62eabb59ebc)
+
+
 
  
  
@@ -80,12 +93,17 @@ Endpoint for the admin to add a player to the team’s squad.
       [POST] /api/teams/{team_id}/squad
 Works only when authorization token is added to headers
 # Unauthorized (when authorization token is not added in the headers)
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/1dcc1c9a-8bd0-4bd9-8d16-f07c4a2c5eec)
+
 
  
 # Authorized and player is added to the team whose id is passed in params(when authorization token is added in headers along with the req.body)
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/3cdaad17-4d8f-451b-9644-f80d7f2d89ee)
+
 
  
 Database after adding player:
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/9aa4e7d9-2511-40ca-a09d-92c8d2ea99f7)
 
  
 7. Get Player’s Stats
@@ -94,14 +112,28 @@ Endpoint for admin to see players stats by entering players id (Assuming some pl
 Works only when authorization token is added to headers
 # Unauthorized (when authorization token is not added in the headers)
  RESPONSE TIME: 709ms
+ ![image](https://github.com/smritizz/cricbuzz/assets/93935378/153aeaf5-b628-4909-b8ff-9fdbb7fb6924)
+
  
  
 
 # Authorized and player’s stats is fetched(when authorization token is added in headers)
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/1ac685f9-95f6-48b0-afcb-9f18e0313152)
+
 
  
 
 DATABASE:
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/53477cbb-b6ef-43d2-8697-66c6c4300ff4)
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/26ae04da-57bb-4f35-9e4f-830eb7b8a93d)
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/c67b9313-ea7a-4a70-8f65-b6bfc5d54e95)
+
+
+
+
+
+
+
 
  
 
