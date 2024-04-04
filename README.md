@@ -1,4 +1,7 @@
-[readme file.pdf](https://github.com/smritizz/cricbuzz/files/14875763/readme.file.pdf)
+You can read the instructions here also: [readme file.pdf](https://github.com/smritizz/cricbuzz/files/14875763/readme.file.pdf)
+
+
+
 Create an API that supports requirements mentioned in the problem statement
 TechStack: Node.js, Express, MongoDB
 Assumptions:
@@ -23,19 +26,20 @@ How to setup:
 
 ENDPOINTS 
 
-1. Register Admin 
-Endpoint for registering a user
+1. Register Admin Endpoint for registering a user
+
 [POST] /api/admin/signup.
 # SignUp successfully done (admin account created)   RESPONSE TIME: 709ms
 ![image](https://github.com/smritizz/cricbuzz/assets/93935378/150000a6-f556-4fb4-b5c2-5d1c20bfb28a)
+
 
  
 
 # DATABASE after registering admin    
 ![image](https://github.com/smritizz/cricbuzz/assets/93935378/688db436-db2b-4964-929a-67cd1eec3393)
-![image](https://github.com/smritizz/cricbuzz/assets/93935378/7e423156-8b5a-4874-b6a2-715900e89699)
 
  
+
 
 2. Login User
 Endpoint for logging in a user
@@ -45,9 +49,13 @@ Endpoint for logging in a user
 
 
 
+
+
  
 # Login Successful (with correct password and username) RESPONSE TIME: 940ms
 ![image](https://github.com/smritizz/cricbuzz/assets/93935378/a8cc6d92-063f-4324-8295-b8d68f581976)
+
+
 
 
     
@@ -61,10 +69,12 @@ RESPONSE TIME: 9ms
 ![image](https://github.com/smritizz/cricbuzz/assets/93935378/bc74fa14-e28d-4a5c-8abc-7bf271d897a8)
 
 
+
  
 
 # Authorized and match is created (when authorization token is added in headers along with the req.body)  RESPONSE TIME: 45ms
 ![image](https://github.com/smritizz/cricbuzz/assets/93935378/c7a72169-2969-4bce-973d-85b7a081e308)
+
 
 
 
@@ -76,12 +86,19 @@ Guest users can also fetch match details, so no authorization needed
 # Match details fetched successfully by Get request  RESPONSE TIME: 7ms
 ![image](https://github.com/smritizz/cricbuzz/assets/93935378/b11cd676-edef-4a96-b936-ecb34bb4f99d)
 
+
+
  
 5. Get match Details by match_id
-Guest users can also fetch match details of a particular match by match_id (No authorization token needed)      [GET] /api/matches/{match_id}
+Guest users can also fetch match details of a particular match by match_id (No authorization token needed)
+
+    [GET] /api/matches/{match_id}
+   
 # Match details of a particular match by passing matchId in params fetched successfully by Get request       RESPONSE TIME: 97ms
 ![image](https://github.com/smritizz/cricbuzz/assets/93935378/247bf474-65a1-4967-98ef-f0a15b9b9ed7)
 ![image](https://github.com/smritizz/cricbuzz/assets/93935378/062f3b4d-478f-42d8-99c2-b62eabb59ebc)
+
+
 
 
 
@@ -124,8 +141,11 @@ Works only when authorization token is added to headers
  
 
 DATABASE:
+
 ![image](https://github.com/smritizz/cricbuzz/assets/93935378/53477cbb-b6ef-43d2-8697-66c6c4300ff4)
+
 ![image](https://github.com/smritizz/cricbuzz/assets/93935378/26ae04da-57bb-4f35-9e4f-830eb7b8a93d)
+
 ![image](https://github.com/smritizz/cricbuzz/assets/93935378/c67b9313-ea7a-4a70-8f65-b6bfc5d54e95)
 
 
