@@ -31,15 +31,20 @@ Endpoint for registering a user
 
  
 
-# DATABASE after registering admin                       
+# DATABASE after registering admin    
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/7e423156-8b5a-4874-b6a2-715900e89699)
+
  
 
 2. Login User
 Endpoint for logging in a user
 [POST] /api/admin/login.
 # Login Failed (enetered wrong password)   RESPONSE TIME: 612ms
+![image](https://github.com/smritizz/cricbuzz/assets/93935378/688db436-db2b-4964-929a-67cd1eec3393)
+
  
 # Login Successful (with correct password and username) RESPONSE TIME: 940ms
+
     
 
 3. create match
@@ -48,9 +53,11 @@ Endpoint for admins to create match
 Works only when authorization token is added to headers
 # Unauthorized (when authorization token is not added in headers along with the req.body)
 RESPONSE TIME: 9ms
+
  
 
 # Authorized and match is created (when authorization token is added in headers along with the req.body)  RESPONSE TIME: 45ms
+
   
 
 4. Get match schedules
@@ -58,35 +65,43 @@ Guest users can also fetch match details, so no authorization needed
 [GET] /api/matches
 # Match details fetched successfully by Get request  RESPONSE TIME: 7ms
 
+
  
 5. Get match Details by match_id
 Guest users can also fetch match details of a particular match by match_id (No authorization token needed)      [GET] /api/matches/{match_id}
 # Match details of a particular match by passing matchId in params fetched successfully by Get request       RESPONSE TIME: 97ms
+
  
  
 
-5. Add player to the team squad
+6. Add player to the team squad
 Endpoint for the admin to add a player to the team’s squad.
       [POST] /api/teams/{team_id}/squad
 Works only when authorization token is added to headers
 # Unauthorized (when authorization token is not added in the headers)
+
  
 # Authorized and player is added to the team whose id is passed in params(when authorization token is added in headers along with the req.body)
+
  
 Database after adding player:
+
  
-5. Get Player’s Stats
+7. Get Player’s Stats
 Endpoint for admin to see players stats by entering players id (Assuming some players data is already present in the database)
       [POST] /api/players/{player_id}/squad
 Works only when authorization token is added to headers
 # Unauthorized (when authorization token is not added in the headers)
  RESPONSE TIME: 709ms
  
+ 
 
 # Authorized and player’s stats is fetched(when authorization token is added in headers)
+
  
 
 DATABASE:
+
  
 
  
